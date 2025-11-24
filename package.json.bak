@@ -1,0 +1,73 @@
+{
+  "name": "@hypelab/lark-dashboard-sdk",
+  "version": "2.0.0",
+  "description": "Production-ready TypeScript SDK for creating Lark/Feishu dashboards via REST API with MCP server support - Enhanced with 2025 Features",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "lark-dashboard-mcp": "./dist/mcp-server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "jest",
+    "example:basic": "ts-node examples/basic-dashboard.ts",
+    "example:complete": "ts-node examples/complete-dashboard.ts",
+    "example:multi-source": "ts-node examples/multi-source-dashboard.ts",
+    "example:realtime": "ts-node examples/realtime-dashboard.ts",
+    "example:list": "ts-node examples/list-block-example.ts",
+    "example:tabpage": "ts-node examples/tabpage-example.ts",
+    "example:permissions": "ts-node examples/permissions-example.ts",
+    "example:2025": "ts-node examples/2025-features-complete.ts",
+    "mcp:start": "node dist/mcp-server.js",
+    "lint": "eslint src --ext .ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "lark",
+    "feishu",
+    "dashboard",
+    "bitable",
+    "api",
+    "sdk",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai"
+  ],
+  "author": "HypeLab <dev@hypelab.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hypelab/lark-dashboard-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/hypelab/lark-dashboard-sdk/issues"
+  },
+  "homepage": "https://github.com/hypelab/lark-dashboard-sdk#readme",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "axios-retry": "^4.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

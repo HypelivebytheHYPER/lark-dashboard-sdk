@@ -1,0 +1,36 @@
+# Source files
+src/
+tsconfig.json
+.eslintrc.js
+
+# Tests
+tests/
+*.test.ts
+*.spec.ts
+jest.config.js
+
+# Examples (included in npm)
+# examples/
+
+# Documentation (included in npm)
+# docs/
+
+# Build artifacts
+*.tsbuildinfo
+.DS_Store
+
+# Development
+node_modules/
+.env
+.env.local
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
