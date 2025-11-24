@@ -1,0 +1,45 @@
+{
+  "app": {
+    "name": "Lark Dashboard Assistant",
+    "version": "1.0.0",
+    "description": "AI-powered assistant for creating Lark dashboards through natural language"
+  },
+  "lark": {
+    "app_id": "${LARK_APP_ID}",
+    "app_secret": "${LARK_APP_SECRET}",
+    "verification_token": "${LARK_VERIFICATION_TOKEN}",
+    "encrypt_key": "${LARK_ENCRYPT_KEY}",
+    "region": "sg"
+  },
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0",
+    "logging": true
+  },
+  "bot": {
+    "context_ttl_minutes": 30,
+    "max_contexts": 1000,
+    "response_timeout_ms": 5000,
+    "retry_attempts": 3
+  },
+  "features": {
+    "natural_language_parsing": true,
+    "multi_turn_conversation": true,
+    "context_memory": true,
+    "rich_card_responses": true,
+    "error_recovery": true
+  },
+  "permissions": {
+    "required_scopes": [
+      "im:message",
+      "im:message.group_at_msg",
+      "bitable:app",
+      "bitable:app:readonly"
+    ]
+  },
+  "events": {
+    "subscribe": [
+      "im.message.receive_v1"
+    ]
+  }
+}

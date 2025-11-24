@@ -20,6 +20,10 @@
     "example:permissions": "ts-node examples/permissions-example.ts",
     "example:2025": "ts-node examples/2025-features-complete.ts",
     "mcp:start": "node dist/mcp-server.js",
+    "bot:start": "node dist/bot/server.js",
+    "bot:dev": "ts-node bot/server.ts",
+    "bot:pm2": "pm2 start bot/ecosystem.config.js",
+    "bot:docker": "docker-compose -f bot/docker-compose.yml up -d",
     "lint": "eslint src --ext .ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run build"

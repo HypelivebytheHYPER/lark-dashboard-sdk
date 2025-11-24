@@ -1,8 +1,15 @@
 # Lark Dashboard SDK
 
 [![npm version](https://img.shields.io/npm/v/@hypelab/lark-dashboard-sdk.svg)](https://www.npmjs.com/package/@hypelab/lark-dashboard-sdk)
+[![npm downloads](https://img.shields.io/npm/dm/@hypelab/lark-dashboard-sdk.svg)](https://www.npmjs.com/package/@hypelab/lark-dashboard-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/HypelivebytheHYPER/lark-dashboard-sdk.svg)](https://github.com/HypelivebytheHYPER/lark-dashboard-sdk/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/HypelivebytheHYPER/lark-dashboard-sdk.svg)](https://github.com/HypelivebytheHYPER/lark-dashboard-sdk/issues)
+[![Node Version](https://img.shields.io/node/v/@hypelab/lark-dashboard-sdk.svg)](https://nodejs.org)
+[![Package Size](https://img.shields.io/bundlephobia/minzip/@hypelab/lark-dashboard-sdk.svg)](https://bundlephobia.com/package/@hypelab/lark-dashboard-sdk)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/HypelivebytheHYPER/lark-dashboard-sdk/ci.yml?branch=main)](https://github.com/HypelivebytheHYPER/lark-dashboard-sdk/actions)
+[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-brightgreen.svg)](https://modelcontextprotocol.io)
 
 Production-ready TypeScript SDK for creating and managing Lark/Feishu dashboards via REST API with Model Context Protocol (MCP) server support.
 
